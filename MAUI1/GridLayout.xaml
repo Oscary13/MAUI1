@@ -37,6 +37,6 @@
         <Button Text="Xd" Grid.Row="1" Grid.Column="0" CornerRadius="400" WidthRequest="100" HeightRequest="100"></Button>
         <Button Text="Hola" Grid.Row="2" Grid.Column="0" ></Button>
         <Label Text=" Buenos dias" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
-        <ImageButton Grid.Row="2" Grid.Column="2" Source="dotnet_bot.svg" HeightRequest="100" WidthRequest="100" Clicked="ImageButton_Clicked"/>
+        <ImageButton Grid.Row="2" Grid.Column="2" Source="dotnet_bot.svg" HeightRequest="90" WidthRequest="90" Clicked="ImageButton_Clicked"/>
     </Grid>
 </ContentPage>
