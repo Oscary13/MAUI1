@@ -3,27 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI1.GridLayout"
              Title="GridLayout">
-    <Grid>
+    <!--Grid RowDefinitions=".3*,.8*, 100" ColumnDefinitions="10,10,10"-->
+    <Grid > 
+        <!--Forma prolongada-->
         <Grid.RowDefinitions>
-            <RowDefinition>
+            <RowDefinition >
                 
             </RowDefinition>
             <RowDefinition>
 
             </RowDefinition>
+            <RowDefinition Height=".5*">
+
+            </RowDefinition>
+            
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition>
+            <ColumnDefinition Width=".9*">
                 
             </ColumnDefinition>
             <ColumnDefinition>
 
             </ColumnDefinition>
-            
+            <ColumnDefinition>
+
+            </ColumnDefinition>
         </Grid.ColumnDefinitions>
         
-        <Button Text="Hola" Grid.Row="0" Grid.Column="1"></Button>
-        <Button Text="Como estas" Grid.Row="0" Grid.Column="0"></Button>
-        <Button Text="Xd" Grid.Row="1" Grid.ColumnSpan="2"></Button>
+        
+        <Button Text="Hola" Grid.Row="0" Grid.Column="0" ></Button>
+        <Button Text="3" Grid.Row="0" Grid.Column="1" CornerRadius="400" WidthRequest="120" HeightRequest="90"></Button>
+        <Button Text="4" Grid.Row="0" Grid.Column="2" CornerRadius="400" WidthRequest="120" HeightRequest="90"></Button>
+        <Button Text="Xd" Grid.Row="1" Grid.Column="0" CornerRadius="400" WidthRequest="100" HeightRequest="100"></Button>
+        <Button Text="Hola" Grid.Row="2" Grid.Column="0" ></Button>
+        <Label Text=" Buenos dias" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+        <ImageButton Grid.Row="2" Grid.Column="2" Source="dotnet_bot.svg" HeightRequest="100" WidthRequest="100" Clicked="ImageButton_Clicked"/>
     </Grid>
 </ContentPage>
