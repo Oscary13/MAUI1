@@ -8,8 +8,22 @@
             <RowDefinition>
                 
             </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
         </Grid.RowDefinitions>
-        <Button Text="Hola"></Button>
-        <Button Text="Cmo estas"></Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+                
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        
+        <Button Text="Hola" Grid.Row="0" Grid.Column="1"></Button>
+        <Button Text="Como estas" Grid.Row="0" Grid.Column="0"></Button>
+        <Button Text="Xd" Grid.Row="1" Grid.ColumnSpan="2"></Button>
     </Grid>
 </ContentPage>
